@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Implementation Methods</title>
+    <!-- LINK TO EXTERNAL JAVASCRIPT --><!-- This pulls in the script.js file you created above -->
+    <script src="script.js" defer></script>
+
+    <!-- INTERNAL JAVASCRIPT --><!-- Written inside <script> tags within the HTML file -->
+    <script>
+        function runInternalJS() {
+            window.alert("pag nahulog ba ako kay sir poly feel mo madara na man ako? HHAHAHA");
+        }
+    </script>
+</head>
+<body>
+<center>
+
+    <h1>JavaScript Implementation Examples</h1>
+    <p id="output">Click the buttons below to see each method in action.</p>
+
+    <!-- 1. INLINE JAVASCRIPT --><!-- Written directly inside the HTML element attribute (onclick) -->
+    <button onclick="document.write('Liezel Bryle Teodoro')">
+        Run Inline JS
+    </button>
+
+    <!-- 2. INTERNAL JAVASCRIPT --><!-- Triggers the function sitting up in the <head> tags -->
+    <button onclick="runInternalJS()">
+        Run Internal JS
+    </button>
+
+    <!-- 3. EXTERNAL JAVASCRIPT -->
+    <!-- Triggers the function sitting inside the script.js file -->
+    <button onclick="runExternalJS()">
+        Run External JS
+    </button>
+</center>
+</body>
+</html>
